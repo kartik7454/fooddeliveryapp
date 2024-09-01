@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = "mongodb+srv://kb848067:kartik123@cluster0.mzc3z2w.mongodb.net/users"
+  url      = process.env.MONGO
 }
 
 
