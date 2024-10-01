@@ -10,7 +10,7 @@ export default async function Home() {
 
   <div className="white h-3/5 ml-32 pt-20">
   <div className=" inline">
-    <h1 className="text-5xl font-bold font-sans">Everything </h1>
+    <h1 className="text-5xl font-bold font-sans">Everythingg </h1>
 <h1 className="text-5xl font-bold font-sans"> is better </h1>
 <h1 className="text-5xl font-bold font-sans ">with a <span className="text-red-500">Pizza</span></h1>
 <div className="mt-8 "><h1 className="text-lg font-medium font-sans text-stone-500 ">Pizza is the missing piece that makes every day</h1>
