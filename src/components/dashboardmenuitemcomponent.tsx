@@ -7,7 +7,7 @@ interface dashboardmenuitemcomponentProps {
   
 }
 
-const Dashboardmenuitemcomponent: FC<dashboardmenuitemcomponentProps> =async ({}) => {
+const Dashboardmenuitemcomponent: FC<dashboardmenuitemcomponentProps> = ({}) => {
     const [menuitem, setmenuitem] = useState<Menuitem[]>([])
     useEffect( ()=>{
         const fetchtodo  = async ()=>{

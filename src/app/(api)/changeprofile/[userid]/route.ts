@@ -1,4 +1,4 @@
-"use server"
+
 import { NextRequest ,NextResponse} from "next/server"
 import  { connectToDB} from "../../../../lib/connectDb.js"
 

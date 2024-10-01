@@ -6,8 +6,8 @@ interface ordersProps {
 
 }
  async function delay(){ await new Promise(resolve=>setTimeout(resolve,0))}
-const Test: FC<ordersProps> = async({}) => {
- await delay()
+const Test: FC<ordersProps> = ({}) => {
+ 
   return (<div>hi</div>)
 }
 

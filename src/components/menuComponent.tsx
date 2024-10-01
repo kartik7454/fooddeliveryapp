@@ -8,7 +8,7 @@ interface MenuProps {
   id:string
 }
 
-const MenuComponent: FC<MenuProps> =async({id}) => {
+const MenuComponent: FC<MenuProps> =({id}) => {
   
   const [user, setuser] = useState<string>()
   const [menuitem, setmenuitem] = useState<Menuitem[]>([])

@@ -8,7 +8,7 @@ interface ordersProps {
 const Orders: FC<ordersProps> = async({orders}) => {
  await delay()
   return (<div>{
-    (orders.toReversed().map(async(item)=>{ 
+    (orders.reverse().map(async(item)=>{ 
      
        function convertDateFormat(isoString: string): string {
          const date = new Date(isoString);
@@ -30,7 +30,7 @@ const Orders: FC<ordersProps> = async({orders}) => {
        }
        
        // Example usage:
-       const isoString ="" ;
+       const isoString =item?.createdAt  ;
        const formattedDate = convertDateFormat(isoString);
        console.log(formattedDate); // Output: August 7, 2024, 3:22 PM EDT (or equivalent based on your time zone)
      
