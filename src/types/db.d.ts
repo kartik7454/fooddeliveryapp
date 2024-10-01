@@ -10,13 +10,23 @@ interface Session {
       address:string}
   
   }
-
+  interface Session1 {
+    name: any
+         email: aany
+         image: any
+         phonenumber:any
+         admin:amy
+         id: any
+         postalcode:any
+         address:any
+     
+     }
 interface Menuitem {
  
   _id:string
     title: string
     discription: string
-    image: string|undefined
+    image: string
     price:number
     type:string
     file:file|null
@@ -53,7 +63,7 @@ interface Menuitem {
       phonenumber:number
       admin:boolean
       id: string
-      postalcode:Number
+      postalcode:number
       address:string
     }
 
@@ -62,10 +72,10 @@ interface Menuitem {
     interface Orders{
       _id:String
       email: String
-      name:String
-      phonenumber: Number
-      address: String
-      postalCode: Number
+      name:string
+      phonenumber: number
+      address: string
+      postalCode: number
       status: String
      
       cartitem: {

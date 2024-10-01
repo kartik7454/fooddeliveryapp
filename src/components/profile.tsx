@@ -58,7 +58,7 @@ const Profile: FC<profileProps> = ({user}) => {
           </div>
           <div>
               <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">postal code</label>
-              <input type="text" id="company"  onChange={   (e)=>  {form.postalcode=   e.target.value } } className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-slate-100 dark:border-gray-600 dark:defdefaultValue-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"defaultValue={form.postalcode}  />
+              <input type="text" id="company"  onChange={   (e)=>  {form.postalcode=  Number(e.target.value)  } } className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-slate-100 dark:border-gray-600 dark:defdefaultValue-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"defaultValue={form.postalcode}  />
           </div>  
           <div>
               <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Phone number</label>

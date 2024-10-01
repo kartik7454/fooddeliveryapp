@@ -201,10 +201,10 @@ console.log(form.size)
         <div>
      <div>
             <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">image</label>
-            <input type="file" onChange={(  (e)=>  {form.image=e.target.files[0].name;   setform((prevState)=>{
+            <input type="file" onChange={(  (e)=>  {form.image=e.target.files?.[0].name ||"";   setform((prevState)=>{
             return{
                 ...prevState,
-                file:e.target.files[0] 
+                file:e.target.files?.[0] 
             }
         }) }  ) }  />
         </div>

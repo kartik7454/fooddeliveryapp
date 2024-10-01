@@ -10,14 +10,14 @@ export default async function Home() {
 
   <div className="white h-3/5 ml-32 pt-20">
   <div className=" inline">
-    <h1 className="text-5xl font-bold font-sans">Everythingg </h1>
+    <h1 className="text-5xl font-bold font-sans">Everything </h1>
 <h1 className="text-5xl font-bold font-sans"> is better </h1>
 <h1 className="text-5xl font-bold font-sans ">with a <span className="text-red-500">Pizza</span></h1>
 <div className="mt-8 "><h1 className="text-lg font-medium font-sans text-stone-500 ">Pizza is the missing piece that makes every day</h1>
 <h1 className="text-lg font-medium font-sans text-stone-500 ">complete. a simple yet delicious joy in life</h1></div>
 
 </div>
-<div  className=" absolute top-16 right-64 h-5/6   "><img src="https://www.easypages.url.tw/w3layouts061/assets/images/products/3.jpg" className="h-4/6 inline"></img>
+<div  className=" absolute top-20 right-64 h-5/6   "><img src="https://www.easypages.url.tw/w3layouts061/assets/images/products/3.jpg" className="h-4/6 inline"></img>
 </div>
 
 </div>

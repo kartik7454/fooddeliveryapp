@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 import { getUserSession } from '@/lib/session'
 import { prisma } from '@/lib/prisma'
 
-import { authOption } from './app/api/auth/[...nextauth]/route'
+
 
 
 export default withAuth(

@@ -1,10 +1,11 @@
+
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "mongodb"
-  url      = process.env.MONGO
+  url      = "env(process.env.MONGO)"
 }
 
 

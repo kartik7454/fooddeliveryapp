@@ -33,7 +33,7 @@ total:0
   cartitem.extraIngredientPrices.map((item)=>{arr.push(item.price)     })
   arr.push(cartitem.size[0].price)
   arr.reduce(myFunc)
-  function myFunc(total, num) {
+  function myFunc(total:any, num:any) {
     return total+num ;
   }
 setcartitemtotal(arr.reduce(myFunc))

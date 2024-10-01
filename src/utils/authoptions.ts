@@ -21,7 +21,9 @@ const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!
     async jwt({ token, profile,user }) {
       //this will triger while session
       console.log(user)
-      if(token.address){const user1 = await prisma.user.findUnique({
+      if(token.address){
+        if(token.email){
+          const user1 = await prisma.user.findUnique({
         where: {
           email: token.email,
         },
@@ -34,7 +36,7 @@ const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!
       token.address = user1?.address
       token.postalcode = user1?.postalcode
    
-    
+        }
     }
 // this will activate when login
       if (profile) {
@@ -89,14 +91,15 @@ const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!
     async session({ session, token }) {
      
       if (token) {
-       // set value of session == jwt
-        session.user.id = token.id
-        session.user.name = token.name
-        session.user.email = token.email
-        session.user.image = token.image
-        session.user.phonenumber = token.phonenumber
-        session.user.address = token.address
-        session.user.postalcode = token.postalcode
+        if (session.user ){ 
+          const session1 = session.user as Session1;
+        session1.id = token.id
+        session1.name = token.name
+        session1.email = token.email
+        session1.image = token.image
+        session1.phonenumber = token.phonenumber
+        session1.address = token.address
+        session1.postalcode = token.postalcode}
       }
     
 

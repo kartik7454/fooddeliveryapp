@@ -17,7 +17,11 @@ const readFile = (
   if (saveLocally) {
     options.uploadDir = path.join(process.cwd(), "/public/images");
     options.filename = (name, ext, path, form) => {
-      return  path.originalFilename.toString() ;
+      if (path.originalFilename){return  path.originalFilename.toString() }
+      else {
+        // Generate a default filename if original filename is undefined
+        return `${name}-${Date.now()}${ext}`;
+      }
     };
   }
   options.maxFileSize = 4000 * 1024 * 1024;
@@ -33,7 +37,7 @@ const readFile = (
 export default  async function handler (req: NextApiRequest,
   res: NextApiResponse)  {
 
-  try {
+  try {console.log("ijnjs")
     await fs.readdir(path.join(process.cwd() + "/public", "/images"));
   } catch (error) {
     await fs.mkdir(path.join(process.cwd() + "/public", "/images"));
