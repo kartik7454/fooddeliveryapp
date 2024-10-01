@@ -3,21 +3,13 @@ import  { connectToDB} from "../../../../lib/connectDb.js"
 
 import { prisma } from '@/lib/prisma'
 
-var mongoose = require('mongoose');
+
 interface Props {
     params: {
 userid: string
       }
 }
-export async function GET (request: NextRequest,Props:Props){
-    try {
-    } catch (error) {
-        
-    }
-    
-    
-    
-   }
+
 
 
 
